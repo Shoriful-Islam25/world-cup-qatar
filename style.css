@@ -1,3 +1,89 @@
-h2{
- color: aqua;
+/* header section */
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  height: 60vh;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5% 5% 0 5%;
+  margin: 5% 10% 5% 10%;
+}
+.watch:hover{
+  background-color: rgb(109, 14, 14);
+}
+.header-text{
+  color: white;
+  width: 100%;
+  padding: 2%;
+}
+.header-text h1{
+  font-size: 4em;
+  margin: 5% 0 5% 0;
+}
+.header-text p{
+  font-size: 1em;
+  margin: 5% 0 5% 0;
+}
+.header-text a{
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 1.5%;
+  margin: 5% 0 5% 0;
+}
+.header-img img{
+  padding-left: 20%;
+  width: 70%;
+  height: 60vh;
+}
+/* main-section */
+.main{
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+  width: 80%;
+  margin: 10vh 10% 10Vh 10%;
+}
+.short-menu{
+  height: 16em;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+}
+.short-menu a:hover{
+  background-color: red;
+}
+.short-menu a{
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: gray;
+  width: 70%;
+  background-color: white;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 1em;
+
+}
+.blogs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+.topics{
+  background-color: rgb(253, 248, 248);
+  margin: 5%;
+  border-radius: 10px;
+}
+.topics> img{
+  width: 100%;
+}.topics> button{
+  margin-top: 3%;
+}
+p> span{
+  margin: 0 5% 0 3%;
 }
