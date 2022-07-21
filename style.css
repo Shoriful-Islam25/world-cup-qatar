@@ -1,8 +1,15 @@
-/* header section */
-*{
+* {
   margin: 0%;
 }
-.header{
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* header section */
+.header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 70%;
@@ -12,23 +19,28 @@
   padding: 5% 5% 0 5%;
   margin: 5% 10% 5% 10%;
 }
-.watch:hover{
+
+.watch:hover {
   background-color: rgb(109, 14, 14);
 }
-.header-text{
+
+.header-text {
   color: white;
   width: 100%;
   padding: 2%;
 }
-.header-text h1{
+
+.header-text h1 {
   font-size: 4em;
   margin: 5% 0 5% 0;
 }
-.header-text p{
+
+.header-text p {
   font-size: 1em;
   margin: 5% 0 5% 0;
 }
-.header-text a{
+
+.header-text a {
   background-color: red;
   border-radius: 5px;
   color: white;
@@ -37,32 +49,31 @@
   padding: 1.5%;
   margin: 5% 0 5% 0;
 }
-.header-img img{
+
+.header-img img {
   padding-left: 20%;
   width: 70%;
   height: 60vh;
 }
+
 /* main-section */
-.main{
+.main {
   display: grid;
   grid-template-columns: .5fr 1.5fr;
   width: 80%;
   margin: 10vh 10% 10Vh 10%;
 }
-.short-menu{
+
+/* link to go another page */
+.short-menu {
   height: 16em;
   background-color: black;
   display: flex;
   flex-direction: column;
   border-radius: 1em;
 }
-/* ..short-menu> .a-blog{
-  background-color: red;
-} */
-/* .short-menu a:hover{
-  background-color: red;
-} */
-.short-menu a{
+
+.short-menu> .bar-1, .bar-2  {
   text-decoration: none;
   text-align: center;
   font-weight: bold;
@@ -73,139 +84,198 @@
   margin: 1em auto;
   padding: 1em;
   border-radius: 1em;
-
 }
-.blogs{
+.short-menu> .bar-3{
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: gray;
+  width: 70%;
+  background-color: red;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 1em;
+}
+.blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
 }
-.topics{
+
+.topics {
   background-color: #fdf8f8;
-  border: 2px solid  #fcf5f5;
+  border: 2px solid #fcf5f5;
   margin: 5%;
   border-radius: 10px;
 }
-.topics> img{
+
+.topics>img {
   width: 100%;
-}.topics> button{
+}
+
+.topics>button {
   margin-top: 3%;
 }
-h3{
+
+/* some internal design */
+h3 {
   margin: 1em 0 1em 0;
 }
-p> span{
+
+p>span {
   margin: 0 5% 0 3%;
 }
+.hidden{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+  visibility: hidden;
+}
+.hidden-content{
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 1.5%;
+}
+
 /* footer section */
-.footer{
+.footer {
   background-color: black;
   color: white;
   height: 50vh;
 }
-.footer-inside{
-margin:auto;
-width: 80%;
-padding-top: 5em;
-display: flex;
-flex-direction: column;
-align-items: center;
+
+.footer-inside {
+  margin: auto;
+  width: 80%;
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-hr{
+
+/* some internal design */
+hr {
   width: 100%;
   margin-bottom: 2em;
 }
-h2{
+
+h2 {
   font-size: 2em;
   padding-bottom: 1.5em;
 }
-.find-us{
+
+.find-us {
   display: flex;
 }
-.find-us P{
+
+.find-us P {
   margin-right: 1em;
 }
-.social-media{
+
+/* social media section  */
+.social-media {
   display: flex;
   gap: 1em;
   font-size: 2em;
   margin-top: 1em;
 }
+
+/* media query for responsive website */
 /* tab view */
-@media screen and (min-width: 577px) and (max-width:992px){
-  .header-text h1{
+@media screen and (min-width: 577px) and (max-width:992px) {
+  .header-text h1 {
     font-size: 3em;
     margin: 5% 0 5% 0;
   }
-  .main{
+
+  .main {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .short-menu{
+
+  .short-menu {
     background-color: white;
   }
-  .blogs{
+
+  .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
   }
-  .find-us{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
 
+  .hidden{
+    visibility: visible;
+  }
 
   /* mobile view */
 }
+
 @media screen and (max-width: 576px) {
- 
-  .header{
+
+  .header {
     display: grid;
     grid-template-columns: 1fr;
     height: 100vh;
   }
-  .header-text{
+
+  .header-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .header-text h1{
+
+  .header-text h1 {
     font-size: 1.9em;
     text-align: center;
   }
-  .header-text p{
+
+  .header-text p {
     font-size: 1em;
     text-align: center;
   }
-  .header-img img{
+
+  .header-img img {
     padding-left: 20%;
     width: 70%;
     height: 58.5vh;
   }
-  .main{
+
+  .main {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .short-menu{
+
+  .short-menu {
     background-color: white;
   }
-  .blogs{
+
+  .blogs {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
-  .find-us{
+
+  .find-us {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .find-us p{
+
+  .find-us p {
     margin-bottom: 1em;
   }
-  .footer{
+
+  .footer {
     height: 80vh;
   }
-  
+
+  .hidden{
+    visibility: hidden;
+  }
+
 }
