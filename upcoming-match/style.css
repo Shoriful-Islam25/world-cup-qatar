@@ -154,3 +154,9 @@ h2{
 .find-us P{
   margin-right: 1em;
 }
+.social-media{
+  display: flex;
+  gap: 1em;
+  font-size: 2em;
+  margin-top: 1em;
+}
